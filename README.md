@@ -1,6 +1,6 @@
 # 个人博客 - 番茄 - Fanki's blog
 
-![](/assets/01.jpg)
+![](/assets/head.jpg)
 * 作者: Fanki
 * QQ: 550263546
 * E-mail: 550263546@qq.com
@@ -9,4 +9,6 @@
 
 ## 主题
 * 学习写Readme-markdown(妈蛋)语法 - 20170413
-    * [Readme语法](/theme/readme/readme_study.md)
+    * [Readme语法](/themes/readme/readme_study.md)
+* 使用Unity Shader - 20170418
+    * [Unity Shader基本用法](/themes/shader/shader_note001.md)
