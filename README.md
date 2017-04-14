@@ -1,5 +1,6 @@
 # 个人博客 - 番茄 - Fanki's blog
 
+![](/assets/01.jpg)
 * 作者: Fanki
 * QQ: 550263546
 * E-mail: 550263546@qq.com
