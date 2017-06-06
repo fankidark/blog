@@ -9,6 +9,6 @@
 
 ## 主题
 * 学习写Readme-markdown(妈蛋)语法 - 20170413
-    * [Readme语法](/themes/readme/readme_study.md)
+    * [Readme语法](https://github.com/fankidark/blog/blob/master/themes/readme/readme_study.md)
 * 使用Unity Shader - 20170418
-    * [Unity Shader基本用法](/themes/shader/shader_note001.md)
+    * [Unity Shader基本用法](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_note001.md)

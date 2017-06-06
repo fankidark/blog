@@ -1,31 +1,38 @@
 Unity Shader 使用笔记一
 ==========================================
 * Shader流程
-    ##### ![](https://github.com/fankidark/blog/blob/master/assets/shader/shader_process.png)
+    ##### ![](https://github.com/fankidark/blog/blob/master/assets/shaderlab/shader_process.png)
 
 * Shader语法
-    ```
+    - [Property说明](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_property.md)
+    ``` shader
     Shader "Shader Index Name"
     {
+        // 定义属性
         Property
         {
         }
         SubShader
         {
+            // 设置一些定义
             Tag {}
             Pass
             {
+                // Pass的独立设置一些定义
                 Tag{}
             }
-            Pass {}
+            Pass { ... }
         }
+        // 返回其他Shader的处理
         Fallback "Fallback Shader"
+        // 编辑器相关的显示
+        CustomEditor "StandardShaderGUI"
     }
     ```
 
 * Shader分类
     * [1] 基本管线
-        ```
+        ``` shader
         Pass {
             // Set up basic white vertex lighting
             Material {
@@ -47,7 +54,7 @@ Unity Shader 使用笔记一
         ```
     * [2] 顶点面片着色器 - 常用的着色器
         * 顶点着色器
-            ```
+            ``` shader
             Pass{
                 CGPROGRAM
                     #pragma vertex vert
@@ -61,19 +68,19 @@ Unity Shader 使用笔记一
             }
             ```
         * 面片着色器 - 常用的着色器
-            ```
+            ``` shader
             Pass{
                 CGPROGRAM
                     #pragma fragment frag
-                	fixed4 frag (v2f i) : SV_Target
-                	{
-                		return (1, 1, 1, 1);
-                	}
+                    fixed4 frag (v2f i) : SV_Target
+                    {
+                        return (1, 1, 1, 1);
+                    }
                 ENDCG
             }
             ```
     * [3] 表面着色器 - Unity封装的着色器
-        ```
+        ``` shader
         CGPROGRAM
             #pragma surface surf Lambert
             void surf (Input IN, inout SurfaceOutput o) 
