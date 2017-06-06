@@ -1,6 +1,6 @@
 # ShaderLab: Properties
 
-* [Unity Shader基本用法](https://github.com/fankidark/blog/blob/master/themes/shader/shader_note001.md)
+* [Unity Shader基本用法](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_note001.md)
 
 ## Numbers and Sliders
 - name ("display name", Range (min, max)) = number

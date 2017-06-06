@@ -5,6 +5,7 @@ Unity Shader 使用笔记一
 
 * Shader语法
     - [Property说明](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_property.md)
+    - [Tag说明](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_tag.md)
     ``` shader
     Shader "Shader Index Name"
     {
