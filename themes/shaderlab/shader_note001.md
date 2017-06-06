@@ -32,7 +32,7 @@ Unity Shader 使用笔记一
     ```
 
 * Shader分类
-    * [1] [固定管线](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_vf.md)
+    * [1] [固定管线](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_fixed_pipeline.md)
         ``` shader
         Pass {
             // Set up basic white vertex lighting
@@ -53,7 +53,7 @@ Unity Shader 使用笔记一
             }
         }
         ```
-    * [2] [可编程着色器 - 常用的着色器]((https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_fixed_pipeline.md))
+    * [2] [可编程着色器 - 常用的着色器](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_vf.md)
         * 顶点着色器
             ``` shader
             Pass{
