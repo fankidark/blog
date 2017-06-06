@@ -32,7 +32,7 @@ Unity Shader 使用笔记一
     ```
 
 * Shader分类
-    * [1] 基本管线
+    * [1] [固定管线](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_vf.md)
         ``` shader
         Pass {
             // Set up basic white vertex lighting
@@ -53,7 +53,7 @@ Unity Shader 使用笔记一
             }
         }
         ```
-    * [2] 顶点面片着色器 - 常用的着色器
+    * [2] [可编程着色器 - 常用的着色器]((https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_fixed_pipeline.md))
         * 顶点着色器
             ``` shader
             Pass{
@@ -68,7 +68,7 @@ Unity Shader 使用笔记一
                 ENDCG
             }
             ```
-        * 面片着色器 - 常用的着色器
+        * 面片着色器
             ``` shader
             Pass{
                 CGPROGRAM
@@ -90,3 +90,12 @@ Unity Shader 使用笔记一
             }
         ENDCG
         ```
+
+## 暂不细说的功能部分
+- [ShaderLab: Legacy Fog](https://docs.unity3d.com/Manual/SL-Fog.html)
+- [ShaderLab: Legacy Alpha Testing](https://docs.unity3d.com/Manual/SL-AlphaTest.html)
+- [ShaderLab: UsePass](https://docs.unity3d.com/Manual/SL-UsePass.html)
+- [ShaderLab: GrabPass](https://docs.unity3d.com/Manual/SL-GrabPass.html)
+- [ShaderLab: Stencil](https://docs.unity3d.com/Manual/SL-Stencil.html)
+
+...
