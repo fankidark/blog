@@ -80,7 +80,7 @@ Unity Shader 使用笔记一
                 ENDCG
             }
             ```
-    * [3] 表面着色器 - Unity封装的着色器
+    * [3] [表面着色器 - Unity封装的着色器](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_surface.md)
         ``` shader
         CGPROGRAM
             #pragma surface surf Lambert

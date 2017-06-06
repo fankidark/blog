@@ -1,4 +1,4 @@
-# ShaderLab 可编程着色器
+# [ShaderLab 可编程着色器](https://docs.unity3d.com/Manual/SL-ShaderPrograms.html)
 
 * [Unity Shader基本用法](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_note001.md)
 
@@ -63,6 +63,22 @@
             }
         }
     }
+    
+## 自定义着色器关键字
+- HLSL snippets
+    - At the start of the snippet compilation directives can be given as #pragma statements. Directives indicating which shader functions to compile:
+        - **#pragma vertex** name - compile function name as the vertex shader.
+        - **#pragma fragment** name - compile function name as the fragment shader.
+        - **#pragma geometry** name - compile function name as DX10 geometry shader. Having this option automatically turns on #pragma target 4.0, described below.
+        - **#pragma hull** name - compile function name as DX11 hull shader. Having this option automatically turns on #pragma target 5.0, described below.
+        - **#pragma domain** name - compile function name as DX11 domain shader. Having this option automatically turns on #pragma target 5.0, described below.
+    - Other compilation directives:
+        - **#pragma target name** - which shader target to compile to. See Shader Compilation Targets page for details.
+        - **#pragma only_renderers** space separated names - compile shader only for given renderers. By default shaders are compiled for all renderers. See Renderers below for details.
+        - **#pragma exclude_renderers** space separated names - do not compile shader for given renderers. By default shaders are compiled for all renderers. See Renderers below for details.
+        - **#pragma multi_compile** … - for working with multiple shader variants.
+        - **#pragma enable_d3d11_debug_symbols** - generate debug information for shaders compiled for DirectX 11, this will allow you to debug shaders via Visual Studio 2012 (or higher) Graphics debugger.
+        - **#pragma hardware_tier_variants** renderer name - generate multiple shader hardware variants of each compiled shader, for each hardware tier that could run the selected renderer. See Renderers below for details.
 
 ## 注意事项
 - 实现部分在CGPROGRAM和ENDCG之间或者CGINCLUDE和ENDCG之间。
