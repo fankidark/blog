@@ -2,11 +2,13 @@ Unity Shader 使用笔记一
 ==========================================
 * Shader流程
     ##### ![](https://github.com/fankidark/blog/blob/master/assets/shaderlab/shader_process.png)
-
+    ##### ![](https://github.com/fankidark/blog/blob/master/assets/shaderlab/shader_process_01.png)
 * Shader语法
     - [Property说明](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_property.md)
     - [Tag说明](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_tag.md)
-    ``` shader
+    - [Culling & Depth Testing说明](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_culling.md)
+    - [Blend混合说明](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_blend.md)
+    ```
     Shader "Shader Index Name"
     {
         // 定义属性
@@ -33,7 +35,7 @@ Unity Shader 使用笔记一
 
 * Shader分类
     * [1] [固定管线](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_fixed_pipeline.md)
-        ``` shader
+        ```
         Pass {
             // Set up basic white vertex lighting
             Material {
@@ -55,7 +57,7 @@ Unity Shader 使用笔记一
         ```
     * [2] [可编程着色器 - 常用的着色器](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_vf.md)
         * 顶点着色器
-            ``` shader
+            ```
             Pass{
                 CGPROGRAM
                     #pragma vertex vert
@@ -69,7 +71,7 @@ Unity Shader 使用笔记一
             }
             ```
         * 面片着色器
-            ``` shader
+            ```
             Pass{
                 CGPROGRAM
                     #pragma fragment frag
@@ -81,7 +83,7 @@ Unity Shader 使用笔记一
             }
             ```
     * [3] [表面着色器 - Unity封装的着色器](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_lab_lan_surface.md)
-        ``` shader
+        ```
         CGPROGRAM
             #pragma surface surf Lambert
             void surf (Input IN, inout SurfaceOutput o) 
@@ -90,6 +92,12 @@ Unity Shader 使用笔记一
             }
         ENDCG
         ```
+
+## 需要了解的点
+- Render Queue
+- ZWrite
+- ZTest
+- Blend
 
 ## 暂不细说的功能部分
 - [ShaderLab: Legacy Fog](https://docs.unity3d.com/Manual/SL-Fog.html)
