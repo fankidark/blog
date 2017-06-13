@@ -1,4 +1,4 @@
-# ShaderLab 固定管线(**透明实现会有渲染排序问题**)
+# ShaderLab 固定管线
 
 * [Unity Shader基本用法](https://github.com/fankidark/blog/blob/master/themes/shaderlab/shader_note001.md)
 
