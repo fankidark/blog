@@ -107,3 +107,20 @@ Unity Shader 使用笔记一
 - [ShaderLab: Stencil](https://docs.unity3d.com/Manual/SL-Stencil.html)
 
 ...
+
+## 一些补充
+- [经常使用的一些函数](http://www.cppblog.com/lai3d/archive/2008/10/23/64889.html)
+- [Material Capture](http://blog.csdn.net/poem_qianmo/article/details/55803629)
+- [Shader Keyword](https://docs.unity3d.com/Manual/SL-MultipleProgramVariants.html)
+- 变量类型([官方建议](https://docs.unity3d.com/Manual/SL-ShaderPerformance.html))
+    - float：高精度浮点值，通常是32位，也是三者中最慢的一个。
+    - half：中精度浮点值。通常是16位，范围是-60000至+60000，它适合存储UV坐标，颜色值等，比float类型快很多。
+    - fixed：低精度浮点值。通常是11位，范围是-2.0至+2.0，精度为1/256。这是三者中最小的一个，可以用于光照计算、颜色等。
+
+## 补充资料和书籍
+- [Unity官网手册](https://docs.unity3d.com/Manual/SL-Reference.html)
+- Cg教程 (http://pan.baidu.com/s/1mhRjwiW) 75uf
+- Unity Shaders and Effects Cookbook (http://pan.baidu.com/s/1o8SbxOI) 0mio
+- Unity Shader入门精要 (http://pan.baidu.com/s/1pLynmnL) zthy
+
+...
